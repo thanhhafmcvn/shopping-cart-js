@@ -1,0 +1,31 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="showAll()">
+    <h1>Your shopping card</h1>
+    <div id="list-item">
+      <fieldset>
+        <legend>Shopping cart</legend>
+        <label>Item: <input type="text" name="name" id="name"/></label>
+        <label>Quantity: <input type="text" name="data" id="data"/></label>
+
+        <input type="button" value="save" onclick="addToCart()"/>
+        <input type="button" value="update" onclick="modifyItem()" />
+        <input type="button" value="delete" onclick="removeItem()" />
+      </fieldset>
+      <div id="items-table">
+        <h2>Shopping list</h2>
+        <table id="table"></table>
+        <label><input type="button" value="clear" onclick="clearAll()">* Delete all items</label>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
